@@ -14,6 +14,7 @@ by the parseCSV function.
 Example 1
 Input: “RECORD,ADDRESS,DATE,STATUS,USER\nABC001,123 Tacoma St,1/1/2020,ACTIVE,Santa
 Claus\nDEMO19-0123,747 Market ST,,CLOSED,John Smith”
+<br>
 Output: [{
 “RECORD”: “ABC001”,
 “ADDRESS”: “123 Tacoma St”,
