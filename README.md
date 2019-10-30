@@ -11,20 +11,26 @@ empty array.
 If a line in the input string is not in valid csv form (too many/not enough separators), please exclude the
 line from the resulting output. See the follow example inputs and the expected outputs when processed
 by the parseCSV function.
+<br>
 Example 1
+<br>
 Input: “RECORD,ADDRESS,DATE,STATUS,USER\nABC001,123 Tacoma St,1/1/2020,ACTIVE,Santa
 Claus\nDEMO19-0123,747 Market ST,,CLOSED,John Smith”
+<br><br>
+Output: [
+<br>{
+“RECORD”: “ABC001”,<br>
+“ADDRESS”: “123 Tacoma St”,<br>
+“DATE”: “1/1/2020”,<br>
+“STATUS”: “ACTIVE”,<br>
+“USER”: “Santa Claus”<br>
+},
+<br>{
 <br>
-Output: [{
-“RECORD”: “ABC001”,
-“ADDRESS”: “123 Tacoma St”,
-“DATE”: “1/1/2020”,
-“STATUS”: “ACTIVE”,
-“USER”: “Santa Claus”
-}, {
 “RECORD”: “DEMO19-0123”,
-“ADDRESS”: “747 Market ST”,
-“DATE”: “”,
-“STATUS”: “CLOSED”,
-“USER”: “John Smith”
+<br>
+“ADDRESS”: “747 Market ST”,<br>
+“DATE”: “”,<br>
+“STATUS”: “CLOSED”,<br>
+“USER”: “John Smith”<br>
 }]
